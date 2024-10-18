@@ -47,3 +47,11 @@
     source ~/.venv/bin/activate (activate.fish) в зависимости от вашего терминала
     make run
     
+
+## Дальнейшие правки 
+
+- Переписать миграции и перенеси их в слой infrastucture
+- Разделить проект на слой domains, presentors, infrastucture
+- Переписать  FrontEnd часть
+- Добавить счетчик метрик (Prometheus)
+- Добавить лог-сервис
