@@ -35,7 +35,7 @@ app.add_middleware(
 
 socket_manager = SocketManager(
     app=app,
-    mount_location="/ws",
+    mount_location="/socket.io",
     cors_allowed_origins=[],
     manager_kwargs={
         "async_mode": "asgi",
