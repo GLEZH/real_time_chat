@@ -34,7 +34,7 @@ app.add_middleware(
 
 
 socket_manager = SocketManager(
-    app=app
+    app=app,
     mount_location="/ws",
     cors_allowed_origins=[],
     manager_kwargs={
