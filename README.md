@@ -42,7 +42,7 @@
 
 ### Запуск через make 
 
-    ```
+    
     make develop
     source ~/.venv/bin/activate (activate.fish) в зависимости от вашего терминала
     make run
