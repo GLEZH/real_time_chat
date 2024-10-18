@@ -35,12 +35,10 @@ app.add_middleware(
 
 socket_manager = SocketManager(
     app=app,
-    mount_location="/socket.io",
+    mount_location="/ws", 
     cors_allowed_origins=[],
-    manager_kwargs={
-        "async_mode": "asgi",
-        "message_queue": f"redis://{settings.REDIS_HOST}:{settings.REDIS_PORT}/0",
-    },
+    socketio_path="socket.io",  
+    msg_queue=f"redis://{settings.REDIS_HOST}:{settings.REDIS_PORT}/0",
 )
 
 
