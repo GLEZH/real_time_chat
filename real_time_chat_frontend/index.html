@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>Вход в систему</h2>
+        <input type="text" id="username" placeholder="Имя пользователя">
+        <input type="password" id="password" placeholder="Пароль">
+        <button id="login-button">Войти</button>
+        <p>Нет аккаунта? <a href="#" id="register-link">Зарегистрироваться</a></p>
+    </div>
+
+    <div id="register-container" style="display: none;">
+        <h2>Регистрация</h2>
+        <input type="text" id="reg-username" placeholder="Имя пользователя">
+        <input type="password" id="reg-password" placeholder="Пароль">
+        <button id="register-button">Зарегистрироваться</button>
+        <p>Уже есть аккаунт? <a href="#" id="login-link">Войти</a></p>
+    </div>
+
+    <div id="chat-container" style="display: none;">
+        <div id="rooms-container">
+            <h3>Комнаты</h3>
+            <ul id="rooms-list"></ul>
+            <input type="text" id="new-room-name" placeholder="Новая комната">
+            <button id="create-room-button">Создать комнату</button>
+        </div>
+        <div id="chat-room-container">
+            <h3 id="current-room">Выберите комнату</h3>
+            <div id="messages-container"></div>
+            <input type="text" id="message-input" placeholder="Введите сообщение">
+            <button id="send-button">Отправить</button>
+            <input type="text" id="private-username" placeholder="Имя пользователя для приватного сообщения">
+            <button id="send-private-button">Отправить приватное сообщение</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.esm.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

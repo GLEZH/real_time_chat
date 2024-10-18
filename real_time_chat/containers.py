@@ -1,4 +1,3 @@
-# app/containers.py
 from dependency_injector import containers, providers
 
 from real_time_chat.repositories.user_repository import UserRepository
@@ -11,7 +10,7 @@ from real_time_chat.database import SessionLocal
 
 class Container(containers.DeclarativeContainer):
     wiring_config = containers.WiringConfiguration(
-        modules=["app.api.auth", "app.api.chat", "app.main"]
+        modules=["real_time_chat.api.auth", "real_time_chat.api.chat", "real_time_chat.main"]
     )
 
     db_session = providers.Factory(SessionLocal)

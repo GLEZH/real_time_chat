@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 
-from real_time_chat.models.user import User
+from real_time_chat.models.users import User
 
 
 class UserRepository:

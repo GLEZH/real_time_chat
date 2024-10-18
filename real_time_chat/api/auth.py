@@ -5,7 +5,7 @@ from fastapi.security import OAuth2PasswordRequestForm
 
 from real_time_chat.services.auth_service import AuthService
 from real_time_chat.containers import Container
-from real_time_chat.schemas.user import UserCreate, UserRead
+from real_time_chat.schemas.users import UserCreate, UserRead
 from real_time_chat.schemas.token import Token
 
 

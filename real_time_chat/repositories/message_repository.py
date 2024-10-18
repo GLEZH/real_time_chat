@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from datetime import datetime
 
-from rereal_time_chat.models.message import Message
+from real_time_chat.models.message import Message
 
 
 class MessageRepository:

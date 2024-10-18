@@ -4,7 +4,7 @@ from jose import JWTError, jwt
 
 from real_time_chat.config import settings
 from real_time_chat.repositories.user_repository import UserRepository
-from real_time_chat.schemas.user import UserCreate
+from real_time_chat.schemas.users import UserCreate
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 

@@ -1,4 +1,3 @@
-# app/schemas/room.py
 from pydantic import BaseModel
 
 

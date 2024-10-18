@@ -1,4 +1,3 @@
-# app/api/chat.py
 from fastapi import APIRouter, Depends, HTTPException, status
 from dependency_injector.wiring import inject, Provide
 from typing import List
@@ -7,7 +6,7 @@ from real_time_chat.services.chat_service import ChatService
 from real_time_chat.containers import Container
 from real_time_chat.schemas.room import RoomCreate, RoomRead
 from real_time_chat.dependencies import get_current_user
-from real_time_chat.models.user import User
+from real_time_chat.models.users import User
 
 
 router = APIRouter()
